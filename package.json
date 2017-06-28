@@ -7,6 +7,10 @@
     "email": "doasync@gmail.com"
   },
   "main": "index.js",
+  "dependencies": {
+    "eslint-config-airbnb": "^15",
+    "eslint-config-standard": "^10",
+  },
   "devDependencies": {
     "babel-eslint": "^7",
     "eslint": "^3",
