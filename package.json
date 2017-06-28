@@ -1,0 +1,53 @@
+{
+  "name": "eslint-config-airbnb-standard",
+  "description": "Airbnb's JS ESLint config + JS Standard Style + semicolons",
+  "version": "0.1.0",
+  "author": {
+    "name": "DoAsync",
+    "email": "doasync@gmail.com"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "babel-eslint": "^7",
+    "eslint": "^3",
+    "eslint-config-airbnb": "^15",
+    "eslint-config-standard": "^10",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-jsx-a11y": "^5",
+    "eslint-plugin-node": "^5",
+    "eslint-plugin-promise": "^3",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-standard": "^3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doasync/eslint-config-airbnb-standard.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "airbnb",
+    "javascript",
+    "styleguide",
+    "standard",
+    "standard style",
+    "style",
+    "style checker",
+    "style linter",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "hint",
+    "jscs",
+    "jshint",
+    "lint",
+    "quality",
+    "verify"
+  ],
+  "license": "MIT"
+}
