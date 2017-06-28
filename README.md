@@ -2,6 +2,9 @@
 
 ESLint config "extends": ["airbnb", "standard"]
 
+This is an original Airbnb style guide config extended with JavaScript Standard config (with semicolons).
+
+Compare configs:
 https://npmcompare.com/compare/eslint-config-airbnb,standard
 
 ## Installation
@@ -14,7 +17,7 @@ npm install --save-dev eslint-config-airbnb-standard
 
 Or just clone this repo to your "Projects" folder to use with WebStorm:
 
-```
+```bash
 git clone https://github.com/doasync/eslint-config-airbnb-standard.git
 ```
 
