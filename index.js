@@ -1,1 +1,1 @@
-module.exports = require('./custom.eslintrc.json')
+module.exports = require('./default.eslintrc.json');
