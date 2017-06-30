@@ -72,7 +72,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
 
 9. You can switch to squiggly underline mark style from *Tools*.
 
-10. Have fun!
+10. Restart Sublime Text. Have fun!
 
 ![Example](http://i.imgur.com/3nzwkdK.png?1)
 
