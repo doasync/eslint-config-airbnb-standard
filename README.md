@@ -31,13 +31,25 @@ cd eslint-config-airbnb-standard
 npm install
 ```
 
-You can also make `eslint` global after cloning and installing (see above):
+You can also make `eslint` global after installing (see above):
 
+Linux:
 ```bash
 ln -s $(pwd -P)/node_modules/.bin/eslint $(npm bin -g)
 ```
 
-FYI: This command creates a symlink for `eslint` installed by `npm install` 
+Windows:
+```cmd
+for /f usebackq %F in (`npm bin -g`) do mklink "%F\eslint.cmd" "%cd%\node_modules\.bin\eslint.cmd"
+for /f usebackq %F in (`npm bin -g`) do mklink /D "%F/../eslint" "%cd%/node_modules/eslint"
+```
+
+Check this with:
+```bash
+eslint -v
+```
+
+FYI: This command creates a symlink for `eslint` installed by `npm install`
 
 ### WebStorm
 
@@ -47,7 +59,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
 
 ### Sublime Text 3
 
-1. Install the repo, [make](IDE and Editors) eslint global 
+1. Install the repo, [make](IDE and Editors) eslint global
 
 2. Go to: *Preferences -> Package Control -> install package*
 
@@ -61,7 +73,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
     ```
     ... and copy the path
 6. Go to: *Preferences -> Package Settings -> SublimeLinter -> Settings User*
-   
+
    Paste the path to NodeJS installation folder inside "paths" for your OS:
     ```json
     "paths": {
@@ -83,7 +95,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
     }
     ```
     Or just copy `.eslintrc` from the cloned repo
-    
+
 8. Go to *Tools -> SublimeLinter -> Lint this view*
 
 9. PROFIT!!!
