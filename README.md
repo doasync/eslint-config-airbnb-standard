@@ -28,6 +28,8 @@ eslint -v
 
 Create `.eslintrc` file in your project. Setup your IDE / Editor. Be smart!
 
+ES6, ES7, React, JSX, async/await - all new features supported by default 👍
+
 ### WebStorm
 
 File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | ESLint
