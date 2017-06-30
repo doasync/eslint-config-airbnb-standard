@@ -42,8 +42,8 @@ ln -s $(pwd -P)/node_modules/.bin/eslint $(npm bin -g)
 
 Windows:
 ```cmd
-for /f usebackq %F in (`npm bin -g`) do mklink "%F\eslint.cmd" "%cd%\node_modules\.bin\eslint.cmd"
-for /f usebackq %F in (`npm bin -g`) do mklink /D "%F/../eslint" "%cd%/node_modules/eslint"
+for /f "usebackq" %F in (`npm bin -g`) do mklink "%F\eslint.cmd" "%cd%\node_modules\.bin\eslint.cmd"
+for /f "usebackq" %F in (`npm bin -g`) do mklink /D "%F/../eslint" "%cd%/node_modules/eslint"
 ```
 
 FYI: These commands create a symlink for `eslint` installed in `node_modules`
@@ -61,7 +61,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
 
 ### Sublime Text 3
 
-1. Install the repo, [make](IDE and Editors) eslint global
+1. Install the repo, [make](IDE and Editors) eslint global, check `eslint -v`
 
 2. Go to: *Preferences -> Package Control -> install package*
 
@@ -74,7 +74,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
     npm bin -g
     ```
     ... and copy the path
-6. Go to: *Preferences -> Package Settings -> SublimeLinter -> Settings User*
+6. Go to: *Tools -> SublimeLinter -> Open User Settings*
 
    Paste the path to NodeJS installation folder inside "paths" for your OS, for example:
     ```json
@@ -83,7 +83,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
             "~/.nvm/versions/node/v8.1.2/bin"
         ],
         "osx": [],
-        "windows": []
+        "windows": ["%AppData%\\npm"]
     },
     ```
 7. Create `.eslintrc` file inside your working project:
