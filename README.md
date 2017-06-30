@@ -14,11 +14,13 @@ See [airbnb/javascript] and [standardjs] for more information.
 
 ## Installation
 
-Yo can install it as a dev dependency to use with `.eslintrc` file:
+Yo can install it locally as a dev dependency to use with `.eslintrc` file:
 
 ```bash
 npm install --save-dev eslint-config-airbnb-standard
 ```
+
+But you might need a global solution... read next.
 
 ##### IDE and Editors
 
@@ -31,13 +33,25 @@ cd eslint-config-airbnb-standard
 npm install
 ```
 
-You can also make `eslint` global after cloning and installing (see above):
+You can also make `eslint` global after installing (see above):
 
+Linux:
 ```bash
 ln -s $(pwd -P)/node_modules/.bin/eslint $(npm bin -g)
 ```
 
-FYI: This command creates a symlink for `eslint` installed by `npm install` 
+Windows:
+```cmd
+for /f usebackq %F in (`npm bin -g`) do mklink "%F\eslint.cmd" "%cd%\node_modules\.bin\eslint.cmd"
+for /f usebackq %F in (`npm bin -g`) do mklink /D "%F/../eslint" "%cd%/node_modules/eslint"
+```
+
+FYI: These commands create a symlink for `eslint` installed in `node_modules`
+
+Then check eslint version with:
+```bash
+eslint -v
+```
 
 ### WebStorm
 
@@ -47,7 +61,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
 
 ### Sublime Text 3
 
-1. Install the repo, [make](IDE and Editors) eslint global 
+1. Install the repo, [make](IDE and Editors) eslint global
 
 2. Go to: *Preferences -> Package Control -> install package*
 
@@ -61,8 +75,8 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
     ```
     ... and copy the path
 6. Go to: *Preferences -> Package Settings -> SublimeLinter -> Settings User*
-   
-   Paste the path to NodeJS installation folder inside "paths" for your OS:
+
+   Paste the path to NodeJS installation folder inside "paths" for your OS, for example:
     ```json
     "paths": {
         "linux": [
@@ -82,8 +96,8 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
       }
     }
     ```
-    Or just copy `.eslintrc` from the cloned repo
-    
+    Or **just copy** `.eslintrc` from the cloned repo
+
 8. Go to *Tools -> SublimeLinter -> Lint this view*
 
 9. PROFIT!!!
@@ -103,6 +117,6 @@ You can turn off semicolons in `.eslintrc` (*semi -> "never"*):
   }
 }
 ```
-### I want that
+### I want that Sublime Text
 
-Full featured nice black Sublime Text 3 config pack is [here](https://github.com/doasync/sublime-text-3-settings)
+You can setup full featured nice black Sublime Text 3 using this repo: [sublime-text-3-settings](https://github.com/doasync/sublime-text-3-settings)
