@@ -1,8 +1,8 @@
 # Airbnb+ JavaScript Standard Style
 
-ESLint config "extends": ["airbnb", "standard"]
+ESLint on steroids (extends "airbnb" + "standard" configs). Global installation!
 
-This is an original Airbnb style guide config extended with JavaScript Standard config (with semicolons).
+It uses original Airbnb Style config extended with JavaScript Standard Style config (with semicolons).
 
 See [airbnb/javascript] and [standardjs] for more information.
 
@@ -14,54 +14,29 @@ See [airbnb/javascript] and [standardjs] for more information.
 
 ## Installation
 
-Yo can install it locally as a dev dependency to use with `.eslintrc` file:
+Install it globally:
 
 ```bash
-npm install --save-dev eslint-config-airbnb-standard
+npm install --global eslint-config-airbnb-standard
 ```
 
-But you might need a global solution... read next.
+You can now run feature packed `eslint` from any directory:
 
-##### IDE and Editors
-
-Or you can clone the repo to your "Projects" folder to use with WebStorm:
-
-```bash
-cd ~/Projects
-git clone https://github.com/doasync/eslint-config-airbnb-standard.git
-cd eslint-config-airbnb-standard
-npm install
-```
-
-You can also make `eslint` global after installing (see above):
-
-Linux:
-```bash
-ln -s $(pwd -P)/node_modules/.bin/eslint $(npm bin -g)
-```
-
-Windows:
-```cmd
-for /f "usebackq" %F in (`npm bin -g`) do mklink "%F\eslint.cmd" "%cd%\node_modules\.bin\eslint.cmd"
-for /f "usebackq" %F in (`npm bin -g`) do mklink /D "%F/../eslint" "%cd%/node_modules/eslint"
-```
-
-FYI: These commands create a symlink for `eslint` installed in `node_modules`
-
-Then check eslint version with:
 ```bash
 eslint -v
 ```
+
+Create `.eslintrc` file in your project. Setup your IDE / Editor. Be smart!
 
 ### WebStorm
 
 File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | ESLint
 
-![ESLint settings](http://i.imgur.com/zqbsG0p.png)
+![ESLint settings](http://i.imgur.com/ZznYeJU.png)
 
 ### Sublime Text 3
 
-1. Install the repo, [make](IDE and Editors) eslint global, check `eslint -v`
+1. Install this package globally
 
 2. Go to: *Preferences -> Package Control -> install package*
 
@@ -89,34 +64,31 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
 7. Create `.eslintrc` file inside your working project:
     ```json
     {
-      "extends": ["airbnb", "standard"],
-      "rules": {
-        "semi": [2, "always"],
-        "object-curly-spacing": [2, "never"]
-      }
+      "extends": ["airbnb-standard"]
     }
     ```
-    Or **just copy** `.eslintrc` from the cloned repo
 
 8. Go to *Tools -> SublimeLinter -> Lint this view*
 
-9. PROFIT!!!
+9. You can switch to squiggly underline mark style from *Tools*.
 
-![Example](http://i.imgur.com/wRwDALx.png)
+10. Have fun!
+
+![Example](http://i.imgur.com/3nzwkdK.png?1)
 
 ### Custom Config
 
-You can turn off semicolons in `.eslintrc` (*semi -> "never"*):
+You can turn off semicolons in `.eslintrc` (*semi -> "never"*) for your project:
 
 ```json
 {
-  "extends": ["airbnb", "standard"],
+  "extends": ["airbnb-standard"],
   "rules": {
-    "semi": ["error", "never"],
-    "object-curly-spacing": ["error", "never"]
+    "semi": ["error", "never"]
   }
 }
 ```
+
 ### I want that Sublime Text
 
-You can setup full featured nice black Sublime Text 3 using this repo: [sublime-text-3-settings](https://github.com/doasync/sublime-text-3-settings)
+You can setup full featured nice black Sublime Text 3 from this repo: [sublime-text-3-settings](https://github.com/doasync/sublime-text-3-settings)

@@ -1,7 +1,3 @@
 {
-  "extends": ["airbnb", "standard"],
-  "rules": {
-    "semi": [2, "always"],
-    "object-curly-spacing": [2, "never"]
-  }
+  "extends": ["airbnb-standard"]
 }
