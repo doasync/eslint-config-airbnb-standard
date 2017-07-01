@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-airbnb-standard",
   "description": "Airbnb's JS ESLint config + JS Standard Style + semicolons",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "author": {
     "name": "DoAsync",
     "email": "doasync@gmail.com"
