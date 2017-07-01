@@ -53,7 +53,7 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
     ... and copy the path
 6. Go to: *Tools -> SublimeLinter -> Open User Settings*
 
-   Paste the path to NodeJS installation folder inside "paths" for your OS, for example:
+   Paste the path to NodeJS installation folder inside "paths" for your OS and save:
     ```json
     "paths": {
         "linux": [
@@ -70,11 +70,11 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
     }
     ```
 
-8. Go to *Tools -> SublimeLinter -> Lint this view*
+8. Restart Sublime Text
 
-9. You can switch to squiggly underline mark style from *Tools*.
+9. Go to *Tools -> SublimeLinter -> Lint this view*
 
-10. Restart Sublime Text. Have fun!
+10. You can switch to squiggly underline mark style from *Tools*. Have fun!
 
 ![Example](http://i.imgur.com/3nzwkdK.png?1)
 
