@@ -1,12 +1,25 @@
 # Airbnb+ JavaScript Standard Style
 
+![ESLint Airbnb Standard JS logo](http://i.imgur.com/A2XaNqc.png)
+
 ESLint on steroids (extends "airbnb" + "standard" configs). Global installation!
 
-It uses original Airbnb Style config extended with JavaScript Standard Style config (with semicolons).
+[![NPM Version][npm-image]][npm-url] ![NPM Downloads][downloads-image] [![GitHub issues][issues-image]][issues-url] [![Telegram][telegram-image]][telegram-url] [![Tweet][twitter-image]][twitter-url]
 
-See [airbnb/javascript] and [standardjs] for more information.
+[npm-image]: https://img.shields.io/npm/v/eslint-config-airbnb-standard.svg
+[npm-url]: https://www.npmjs.com/package/eslint-config-airbnb-standard
+[downloads-image]: https://img.shields.io/npm/dw/eslint-config-airbnb-standard.svg
+[deps-image]: https://david-dm.org/doasync/eslint-config-airbnb-standard.svg
+[issues-image]: https://img.shields.io/github/issues/doasync/eslint-config-airbnb-standard.svg
+[issues-url]: https://github.com/doasync/eslint-config-airbnb-standard/issues
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
+[license-url]: https://raw.githubusercontent.com/doasync/eslint-config-airbnb-standard/master/LICENSE
+[twitter-image]: http://i.imgur.com/VYWV3yd.png
+[twitter-url]: https://twitter.com/intent/tweet?text=ESLint%20on%20steroids%20with%20Airbnb%2B%20Standard%20JS%20styles%20(%2B%20Sublime%20Text%203%20setup):&url=https://codeburst.io/eslint-with-airbnb-standard-js-sublime-text-965a1db58793
+[telegram-image]: http://i.imgur.com/WANXk3d.png
+[telegram-url]: https://t.me/doasync
 
-[Compare] configs.
+It uses original Airbnb Style config extended with JavaScript Standard Style config (with semicolons). See [airbnb/javascript] and [standardjs] for more information. [Compare] configs.
 
 [airbnb/javascript]: https://github.com/airbnb/javascript
 [standardjs]: https://standardjs.com/
