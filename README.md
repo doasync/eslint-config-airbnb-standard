@@ -19,7 +19,9 @@ ESLint on steroids (extends "airbnb" + "standard" configs). Global installation!
 [telegram-image]: http://i.imgur.com/WANXk3d.png
 [telegram-url]: https://t.me/doasync
 
-It uses original Airbnb Style config extended with JavaScript Standard Style config (with semicolons). See [airbnb/javascript] and [standardjs] for more information. [Compare] configs.
+It uses original Airbnb Style config extended with JavaScript Standard Style config (with semicolons).
+
+See [airbnb/javascript] and [standardjs] for more information. [Compare] configs.
 
 [airbnb/javascript]: https://github.com/airbnb/javascript
 [standardjs]: https://standardjs.com/
