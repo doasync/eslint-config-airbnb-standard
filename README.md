@@ -45,13 +45,7 @@ Create `.eslintrc` file in your project. Setup your IDE / Editor. Be smart!
 
 ES6, ES7, React, JSX, async/await - all new features supported by default 👍
 
-### WebStorm
-
-File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | ESLint
-
-![ESLint settings](http://i.imgur.com/ZznYeJU.png)
-
-### Sublime Text 3
+## Sublime Text 3
 
 1. Install this package globally
 
@@ -93,7 +87,13 @@ File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | E
 
 ![Example](http://i.imgur.com/3nzwkdK.png?1)
 
-### Custom Config
+## WebStorm
+
+File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | ESLint
+
+![ESLint settings](http://i.imgur.com/ZznYeJU.png)
+
+## Custom Config
 
 You can turn off semicolons in `.eslintrc` (*semi -> "never"*) for your project:
 
@@ -106,6 +106,6 @@ You can turn off semicolons in `.eslintrc` (*semi -> "never"*) for your project:
 }
 ```
 
-### I want that Sublime Text
+## I want that Sublime Text
 
 You can setup full featured nice black Sublime Text 3 from this repo: [sublime-text-3-settings](https://github.com/doasync/sublime-text-3-settings)
