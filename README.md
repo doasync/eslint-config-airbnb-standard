@@ -35,13 +35,21 @@ Install it globally:
 npm install --global eslint-config-airbnb-standard
 ```
 
+You can install it locally as well:
+
+```bash
+npm install --save-dev eslint-config-airbnb-standard
+```
+
+## Usage
+
 You can now run feature packed `eslint` from any directory:
 
 ```bash
 eslint -v
 ```
 
-Create `.eslintrc` file in your project. Setup your IDE / Editor. Be smart!
+Create `.eslintrc` file in your project. Setup your IDE / Editor. And be smart!
 
 ES6, ES7, React, JSX, async/await - all new features supported by default 👍
 
@@ -89,14 +97,16 @@ ES6, ES7, React, JSX, async/await - all new features supported by default 👍
 
 ## WebStorm
 
-File | Settings | Languages and Frameworks | JavaScript | Code Quality Tools | ESLint
+File ➤ Settings / Default Settings ➤ Languages and Frameworks ➤ JavaScript ➤ Code Quality Tools ➤ ESLint
 
 ![ESLint settings](http://i.imgur.com/ZznYeJU.png)
 
+Global installation in not necessary for WebStorm, but it is handy for the "Default Settings".
+
 ## Custom Config
 
-You can turn off semicolons in `.eslintrc` (*semi -> "never"*) for your project:
-
+Add your own rules to the `.eslintrc` file in your project folder. 
+For example, you can turn off semicolons (*semi -> "never"*):
 ```json
 {
   "extends": ["airbnb-standard"],
