@@ -27,6 +27,15 @@ See [airbnb/javascript] and [standardjs] for more information. [Compare] configs
 [standardjs]: https://standardjs.com/
 [Compare]: https://npmcompare.com/compare/eslint-config-airbnb,standard
 
+## Another package
+
+```diff
+- Use another package if you want the original Airbnb config only
+```
+ESlint + Airbnb (nothing extra) : **[eslint-config-airbnb-bundle]**
+
+[eslint-config-airbnb-bundle]: https://www.npmjs.com/package/eslint-config-airbnb-bundle
+
 ## Installation
 
 Install it globally:
@@ -105,7 +114,7 @@ Global installation in not necessary for WebStorm, but it is handy for the "Defa
 
 ## Custom Config
 
-Add your own rules to the `.eslintrc` file in your project folder. 
+Add your own rules to the `.eslintrc` file in your project folder.
 For example, you can turn off semicolons (*semi -> "never"*):
 ```json
 {

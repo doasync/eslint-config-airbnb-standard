@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-airbnb-standard",
   "description": "Airbnb's JS ESLint config + JS Standard Style + semicolons",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "author": {
     "name": "DoAsync",
     "email": "doasync@gmail.com"
@@ -11,23 +11,20 @@
     "eslint": "node_modules/eslint/bin/eslint.js"
   },
   "dependencies": {
-    "babel-eslint": "^7",
-    "eslint": "^3",
-    "eslint-config-airbnb": "^15",
-    "eslint-config-airbnb-base": "^11",
+    "babel-eslint": "^8",
+    "eslint": "^4",
+    "eslint-config-airbnb": "^16",
     "eslint-config-standard": "^10",
     "eslint-plugin-import": "^2",
-    "eslint-plugin-jsx-a11y": "^5",
+    "eslint-plugin-jsx-a11y": "^6",
     "eslint-plugin-node": "^5",
     "eslint-plugin-promise": "^3",
     "eslint-plugin-react": "^7",
     "eslint-plugin-standard": "^3"
   },
   "bundleDependencies": [
-    "babel-eslint",
     "eslint",
     "eslint-config-airbnb",
-    "eslint-config-airbnb-base",
     "eslint-config-standard",
     "eslint-plugin-import",
     "eslint-plugin-jsx-a11y",
