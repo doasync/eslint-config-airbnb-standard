@@ -20,7 +20,8 @@
     "eslint-plugin-node": "^5",
     "eslint-plugin-promise": "^3",
     "eslint-plugin-react": "^7",
-    "eslint-plugin-standard": "^3"
+    "eslint-plugin-standard": "^3",
+    "eslint-plugin-compat": "^2"
   },
   "bundleDependencies": [
     "eslint",
@@ -31,7 +32,8 @@
     "eslint-plugin-node",
     "eslint-plugin-promise",
     "eslint-plugin-react",
-    "eslint-plugin-standard"
+    "eslint-plugin-standard",
+    "eslint-plugin-compat"
   ],
   "repository": {
     "type": "git",

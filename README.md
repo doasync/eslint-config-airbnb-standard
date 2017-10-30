@@ -29,10 +29,10 @@ See [airbnb/javascript] and [standardjs] for more information. [Compare] configs
 
 ## Another package
 
-```diff
-- Use another package if you want the original Airbnb config only
-```
-ESlint + Airbnb (nothing extra) : **[eslint-config-airbnb-bundle]**
+
+If you want to install Airbnb config only, check this package:
+
+ESLint + Airbnb : **[eslint-config-airbnb-bundle]**
 
 [eslint-config-airbnb-bundle]: https://www.npmjs.com/package/eslint-config-airbnb-bundle
 
@@ -83,7 +83,7 @@ ES6, ES7, React, JSX, async/await - all new features supported by default 👍
     ```json
     "paths": {
         "linux": [
-            "~/.nvm/versions/node/v8.1.2/bin"
+            "~/.nvm/versions/node/v8.8.1/bin"
         ],
         "osx": [],
         "windows": ["%AppData%\\npm"]
