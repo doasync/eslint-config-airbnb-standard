@@ -50,6 +50,14 @@ You can install it locally as well:
 npm install --save-dev eslint-config-airbnb-standard
 ```
 
+##### Setup your IDE / Editor:
+
+[Sublime Text 3](#user-content-sublime-text-3)
+
+[WebStorm](#user-content-webstorm)
+
+[Atom](#user-content-atom)
+
 ## Usage
 
 You can now run feature packed `eslint` from any directory:
@@ -61,6 +69,19 @@ eslint -v
 Create `.eslintrc` file in your project. Setup your IDE / Editor. And be smart!
 
 ES6, ES7, React, JSX, async/await - all new features supported by default 👍
+
+## Custom Config
+
+Add your own rules to the `.eslintrc` file in your project folder.
+For example, you can turn off semicolons (*semi -> "never"*):
+```json
+{
+  "extends": ["airbnb-standard"],
+  "rules": {
+    "semi": ["error", "never"]
+  }
+}
+```
 
 ## Sublime Text 3
 
@@ -112,18 +133,40 @@ File ➤ Settings / Default Settings ➤ Languages and Frameworks ➤ JavaScript
 
 Global installation in not necessary for WebStorm, but it is handy for the "Default Settings".
 
-## Custom Config
+## Atom
 
-Add your own rules to the `.eslintrc` file in your project folder.
-For example, you can turn off semicolons (*semi -> "never"*):
-```json
-{
-  "extends": ["airbnb-standard"],
-  "rules": {
-    "semi": ["error", "never"]
-  }
-}
-```
+1. Install this package globally
+
+2. Go to: *Edit -> Preferences -> Install*
+
+3. Install [Linter](https://atom.io/packages/linter)
+
+4. Install [linter-eslint](https://atom.io/packages/linter-eslint)
+
+5. Run:
+    ```bash
+    npm prefix -g
+    ```
+    ... copy the prefix path
+6. Go to: *Preferences -> Packages -> linter-eslint -> Settings*
+
+   a) Check *"Use global ESLint installation"* option at the bottom
+   
+   b) Paste the prefix path to the field *"Global Node Installation Path"* and append:
+   ```bash
+   /lib/node_modules/eslint-config-airbnb-standard
+   ```
+   
+    ![Example](https://i.imgur.com/9pj68pp.png?1)
+
+7. Create `.eslintrc` file inside your working project:
+    ```json
+    {
+      "extends": ["airbnb-standard"]
+    }
+    ```
+    
+8. Press *`Ctrl + Shift + P` -> enter "lint" -> click "Linter:Lint"*
 
 ## I want that Sublime Text
 
