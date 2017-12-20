@@ -29,7 +29,6 @@ See [airbnb/javascript] and [standardjs] for more information. [Compare] configs
 
 ## Another package
 
-
 If you want to install Airbnb config only, check this package:
 
 ESLint + Airbnb : **[eslint-config-airbnb-bundle]**
@@ -81,6 +80,20 @@ For example, you can turn off semicolons (*semi -> "never"*):
     "semi": ["error", "never"]
   }
 }
+```
+
+## ESLint inside
+
+You shouldn't add `eslint` to your dependencies. It's bundled with this package, just specify the path if you need.
+Here is an example for `eslint-loader`:
+
+```javascript
+{
+  loader: 'eslint-loader',
+  options: {
+    eslintPath: 'eslint-config-airbnb-standard/node_modules/eslint',
+  }
+},
 ```
 
 ## Sublime Text 3
@@ -151,12 +164,12 @@ Global installation in not necessary for WebStorm, but it is handy for the "Defa
 6. Go to: *Preferences -> Packages -> linter-eslint -> Settings*
 
    a) Check *"Use global ESLint installation"* option at the bottom
-   
+
    b) Paste the prefix path to the field *"Global Node Installation Path"* and append:
    ```bash
    /lib/node_modules/eslint-config-airbnb-standard
    ```
-   
+
     ![Example](https://i.imgur.com/9pj68pp.png?1)
 
 7. Create `.eslintrc` file inside your working project:
@@ -165,7 +178,7 @@ Global installation in not necessary for WebStorm, but it is handy for the "Defa
       "extends": ["airbnb-standard"]
     }
     ```
-    
+
 8. Press *`Ctrl + Shift + P` -> enter "lint" -> click "Linter:Lint"*
 
 ## I want that Sublime Text
