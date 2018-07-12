@@ -51,9 +51,11 @@ npm install --save-dev eslint-config-airbnb-standard
 
 ##### Setup your IDE / Editor:
 
-[Sublime Text 3](#user-content-sublime-text-3)
-
 [WebStorm](#user-content-webstorm)
+
+[VSCode](#user-content-vscode)
+
+[Sublime Text 3](#user-content-sublime-text-3)
 
 [Atom](#user-content-atom)
 
