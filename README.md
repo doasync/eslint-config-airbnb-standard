@@ -165,7 +165,7 @@ Here is an example for `eslint-loader`:
     ```
 
 7. Create `.eslintrc.js` file inside your working project root:
-    ```json
+    ```js
     process.chdir(__dirname);
 
     module.exports = {
