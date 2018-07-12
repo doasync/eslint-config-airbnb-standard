@@ -138,6 +138,50 @@ Here is an example for `eslint-loader`:
 
 ![Example](http://i.imgur.com/3nzwkdK.png?1)
 
+## VSCode
+
+1. Install this package globally (or locally)
+
+2. Go to: *View -> Extension* or press `CTRL + SHIFT + X`
+
+3. Search for [ESLint](https://github.com/Microsoft/vscode-eslint) extension, click it and press "Install" button
+
+4. Press "Reload" button or reopen the editor
+
+5. Go to: *File -> Preferences -> Settings*
+
+   Add ESLint path to your workspace settings (do not use `~`):
+    ```json
+    {
+      "eslint.nodePath": "/home/username/.nvm/versions/node/v10.5.0/lib/node_modules/eslint-config-airbnb-standard/node_modules/eslint",
+    }
+    ```
+
+   Relative path for local installation:
+    ```json
+    {
+      "eslint.nodePath": "node_modules/eslint-config-airbnb-standard/node_modules/eslint",
+    }
+    ```
+
+7. Create `.eslintrc.js` file inside your working project root:
+    ```json
+    process.chdir(__dirname);
+
+    module.exports = {
+      root: true,
+      parser: 'babel-eslint',
+      parserOptions: {
+        allowImportExportEverywhere: true,
+        codeFrame: false
+      },
+      extends: [
+        'airbnb-standard',
+      ],
+    };
+    ```
+    ![VSCode errors](https://i.imgur.com/sNL9w7V.png)
+
 ## WebStorm
 
 File ➤ Settings / Default Settings ➤ Languages and Frameworks ➤ JavaScript ➤ Code Quality Tools ➤ ESLint
@@ -180,7 +224,3 @@ Global installation in not necessary for WebStorm, but it is handy for the "Defa
     ```
 
 8. Press *`Ctrl + Shift + P` -> enter "lint" -> click "Linter:Lint"*
-
-## I want that Sublime Text
-
-You can setup full featured nice black Sublime Text 3 from this repo: [sublime-text-3-settings](https://github.com/doasync/sublime-text-3-settings)
