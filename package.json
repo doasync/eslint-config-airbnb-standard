@@ -13,17 +13,18 @@
   "dependencies": {
     "babel-eslint": "^8",
     "eslint": "^4",
-    "eslint-config-airbnb": "^16",
+    "eslint-config-airbnb": "^17",
     "eslint-config-standard": "^10",
+    "eslint-plugin-compat": "^2",
     "eslint-plugin-import": "^2",
     "eslint-plugin-jsx-a11y": "^6",
     "eslint-plugin-node": "^5",
     "eslint-plugin-promise": "^3",
     "eslint-plugin-react": "^7",
-    "eslint-plugin-standard": "^3",
-    "eslint-plugin-compat": "^2"
+    "eslint-plugin-standard": "^3"
   },
   "bundleDependencies": [
+    "babel-eslint",
     "eslint",
     "eslint-config-airbnb",
     "eslint-config-standard",
