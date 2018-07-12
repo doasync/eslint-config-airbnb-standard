@@ -16,6 +16,7 @@
     "eslint-config-airbnb": "^17",
     "eslint-config-standard": "^10",
     "eslint-plugin-compat": "^2",
+    "eslint-plugin-flowtype": "^2",
     "eslint-plugin-import": "^2",
     "eslint-plugin-jsx-a11y": "^6",
     "eslint-plugin-node": "^5",
