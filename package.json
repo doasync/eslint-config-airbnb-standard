@@ -17,7 +17,7 @@
     "babel-eslint": "^8",
     "eslint": "^4",
     "eslint-config-airbnb": "^17",
-    "eslint-config-standard": "^10",
+    "eslint-config-standard": "^12",
     "eslint-plugin-babel": "x",
     "eslint-plugin-compat": "^2",
     "eslint-plugin-flowtype": "x",
