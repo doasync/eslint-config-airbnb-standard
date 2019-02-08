@@ -10,9 +10,6 @@
   "bin": {
     "eslint": "node_modules/eslint/bin/eslint.js"
   },
-  "resolutions": {
-    "eslint-scope": "3.7.1"
-  },
   "dependencies": {
     "babel-eslint": "^8",
     "eslint": "^4",
