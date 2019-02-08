@@ -16,6 +16,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-babel": "x",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-node": "^7.0.0",
@@ -34,7 +35,8 @@
     "eslint-plugin-node",
     "eslint-plugin-promise",
     "eslint-plugin-react",
-    "eslint-plugin-standard"
+    "eslint-plugin-standard",
+    "eslint-plugin-babel"
   ],
   "repository": {
     "type": "git",
